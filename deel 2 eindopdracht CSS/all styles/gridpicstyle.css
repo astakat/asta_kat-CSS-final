@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mara-grid {
+  margin: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background-color: #c3cfe2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 7px;
+}
+
+.mara-grid__container {
+  background: #302f2f;
+  border-radius: 10px 10px 10px 10px;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.mara-grid__button {
+  position: absolute;
+  top: 45%;
+  right: 40%;
+}
+
+.mara-grid__plaatje {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 10px 10px;
+  opacity: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.mara-grid__container:hover .btn {
+  opacity: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.btn {
+  opacity: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+img:hover {
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+@media screen and (min-width: 768px) {
+  .mara-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mara-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=gridpicstyle.css.map */

@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.mara-grid {
+  margin: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background-color: #c3cfe2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 7px;
+  &__container {
+    background: rgb(48, 47, 47);
+    border-radius: 10px 10px 10px 10px;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  &__button {
+    position: absolute;
+    top: 45%;
+    right: 40%;
+  }
+  &__plaatje {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 1;
+    transition: 500ms;
+  }
+}
+.mara-grid__container:hover .btn {
+  opacity: 1;
+  transition: 500ms;
+}
+.btn {
+  opacity: 0;
+  transition: 500ms;
+}
+img:hover {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
+@media screen and (min-width: 768px) {
+  .mara-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mara-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
