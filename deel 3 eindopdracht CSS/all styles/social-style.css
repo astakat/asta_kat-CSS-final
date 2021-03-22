@@ -1,10 +1,10 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,46 +12,31 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   background-color: #c3cfe2;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: #b13232;
   display: flex;
 }
 
 .container {
   position: fixed;
   right: -260;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   white-space: nowrap;
   width: 300px;
   overflow: hidden;
   text-overflow: clip;
 }
-
 .container__soc {
   padding: 10px;
   text-decoration: underline;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transform: translateX(0px);
+  transition-duration: 600ms;
+  transition-timing-function: ease-in-out;
 }
-
 .container__soc:hover {
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
-  -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transform: translateX(-200px);
+  transition-duration: 600ms;
+  transition-timing-function: ease-in-out;
 }
 
 .fas {
@@ -88,26 +73,25 @@ body {
 }
 
 .fa-laptop-code::before {
-  content: "\f5fc";
+  content: "";
 }
 
 .fa-twitter::before {
   font-family: "Font Awesome 5 Brands";
-  content: "\f099";
+  content: "";
 }
 
 .fa-linkedin-in::before {
   font-family: "Font Awesome 5 Brands";
-  content: "\f0e1";
+  content: "";
 }
 
 .fa-facebook-f::before {
   font-family: "Font Awesome 5 Brands";
-  content: "\f39e";
+  content: "";
 }
 
 .fa-github::before {
   font-family: "Font Awesome 5 Brands";
-  content: "\f09b";
-}
-/*# sourceMappingURL=social-style.css.map */
+  content: "";
+}/*# sourceMappingURL=social-style.css.map */
